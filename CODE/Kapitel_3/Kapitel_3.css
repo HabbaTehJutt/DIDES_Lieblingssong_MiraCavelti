@@ -13,11 +13,11 @@ video {
       }
       
       img {
-        width: 60vw;
-        height: 55vh;
+        width: 80vw;
+        height: 75vh;
         position: absolute;
-        top: 22vh;
-        left: 20vw;
+        top: 12vh;
+        left: 12vw;
         z-index: 2;
         cursor: pointer; /* Zeigt Mauszeiger als Hand */
       }
