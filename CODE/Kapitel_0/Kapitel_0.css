@@ -70,7 +70,7 @@ img:hover {
   }
 
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1080px) {
     /* Titeltext kleiner & zentriert */
     .text-overlay {
       font-size: 8vh;
