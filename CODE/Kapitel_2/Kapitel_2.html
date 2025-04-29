@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kapitel 2</title>
+  <link rel="stylesheet" href="Kapitel_2.css">
+
+</head>
+<body>
+  <video id="bg-video" muted>
+    <source src="Kapitel_2_animation.mp4" type="video/mp4">
+    Dein Browser unterstützt das Video-Tag nicht.
+  </video>
+
+  <audio id="bg-sound">
+    <source src="Kapitel_2_Sound.mp3" type="audio/mpeg">
+  </audio>
+
+  <a href="Kapitel_3.html" class="image-link hidden">
+    <img src="Kapitel_3_Button.png" alt="Kapitel Knopf3" class="img">
+  </a>
+
+  <img src="play_button.png" alt="Play" id="play-button"> 
+
+
+  <script> 
+    const playButton = document.getElementById('play-button');
+  
+    playButton.addEventListener('click', function startMedia() {
+      const video = document.getElementById('bg-video');
+      const audio = document.getElementById('bg-sound');
+  
+      video.play();
+      audio.play();
+  
+      // Play-Button ausblenden
+      playButton.style.display = 'none';
+  
+      // Bild-Link einblenden, wenn Video zu Ende ist
+      video.addEventListener('ended', () => {
+        const imageLink = document.querySelector('.image-link');
+        imageLink.classList.remove('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

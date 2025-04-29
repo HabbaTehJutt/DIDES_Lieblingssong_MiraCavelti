@@ -1,0 +1,112 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+object-fit: cover;
+z-index: -1;
+}
+
+img {
+  width: 30vh;
+  height: 10vw;
+  position: absolute;
+  bottom: 30%;
+  left: 8%;
+  z-index: 2;
+  cursor: pointer; /* Zeigt Mauszeiger als Hand */
+}
+
+img:hover {
+  transform: scale(1.2); /* Leichtes Vergrößern */
+  opacity: 0.9; /* Etwas transparenter für Effekt */
+}
+
+.text-overlay {
+    position: relative;
+    top: 3%;
+    left: 3%;
+    color: rgb(70, 143, 65);
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 15vh;
+    text-align: left;
+    animation: float-up 3s ease-in-out infinite;
+  }
+  
+  .text-Artist {
+    position: relative;
+    top: 5%;
+    left: 3%;
+    color: rgb(243, 195, 21);
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 10vh;
+    text-align: left;
+    animation: float-up 2s ease-in-out infinite; /* Andere Dauer und Richtung */
+  }
+  
+  .floating {
+    position: relative;
+  }
+  
+  /* Animation für .text-overlay (Schwebt nach oben) */
+  @keyframes float-up {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+  
+  /* Animation für .text-Artist (Schwebt nach unten) */
+  @keyframes float-down {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    /* Titeltext kleiner & zentriert */
+    .text-overlay {
+      font-size: 8vh;
+      text-align: center;
+      left: 0;
+      top: 5%;
+    }
+
+    .text-Artist {
+      font-size: 6vh;
+      text-align: center;
+      left: 0;
+      top: 6%;
+    }
+
+    video {
+      position: fixed;
+      bottom: 0;
+      left: -5;
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain; /* statt "cover" */
+      object-position: bottom;
+      z-index: -1;
+      }
+  
+    /* Button kleiner & anders positioniert */
+    img {
+      width: 30vh;
+      height: auto;
+      top: 40%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    img:hover {
+        transform: translateX(-50%) scale(1.2);
+    }
+  }

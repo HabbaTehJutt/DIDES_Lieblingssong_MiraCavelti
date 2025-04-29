@@ -1,0 +1,58 @@
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    }
+
+    .hidden {
+        display: none;
+      }
+      
+    img.img {
+        width: 60vw;
+        height: 58vh;
+        position: absolute;
+        top: 22vh;
+        left: 20vw;
+        z-index: 2;
+        cursor: pointer;
+      }
+      
+      
+     img:hover {
+        transform: scale(1.2); /* Leichtes Vergrößern */
+      }
+
+#play-button {
+        position: absolute;
+        top: 7%;
+        left: 10%;
+        width: 78vw; /* Größe anpassen */
+        height: 85vh;
+        z-index: 3;
+        cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  video {
+    object-fit: contain; /* Alternativ: 'cover' kann Inhalte abschneiden */
+  }
+
+  img.img {
+    width: 80vw;
+    height: auto;
+    top: 30vh;
+    left: 10vw;
+  }
+
+  #play-button {
+    width: 90vw;
+    height: 45vh;
+    top: 28%;
+    left: 5%;
+  }
+}

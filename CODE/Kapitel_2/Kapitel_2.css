@@ -1,0 +1,58 @@
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    }
+
+    .hidden {
+        display: none;
+      }
+      
+      img {
+        width: 60vw;
+        height: 65vh;
+        position: absolute;
+        top: 22vh;
+        left: 20vw;
+        z-index: 2;
+        cursor: pointer; /* Zeigt Mauszeiger als Hand */
+      }
+      
+      img:hover {
+        transform: scale(1.2); /* Leichtes Vergrößern */
+      }
+
+      #play-button {
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        width: 52vw; /* Größe anpassen */
+        height: 55vh;
+        z-index: 3;
+        cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  video {
+    object-fit: contain; /* Verhindert das Abschneiden auf kleinen Bildschirmen */
+  }
+
+  img {
+    width: 102vw;
+    height: auto;
+    top: 28.5vh;
+    left: 0px
+  }
+
+  #play-button {
+    width: 90vw;
+    height: auto;
+    top: 30%;
+    left: 9%;
+  }
+}
