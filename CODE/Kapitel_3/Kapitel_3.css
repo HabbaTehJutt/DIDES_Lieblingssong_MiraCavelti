@@ -36,7 +36,7 @@ video {
         cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   video {
     object-fit: contain; /* Verhindert das Abschneiden des Videos */
   }
