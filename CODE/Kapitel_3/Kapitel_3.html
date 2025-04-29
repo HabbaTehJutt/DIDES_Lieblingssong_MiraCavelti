@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kapitel 3</title>
-  <link rel="stylesheet" href="Kapitel_3.css" />
+  <link rel="stylesheet" href="Kapitel_3.css">
+
 </head>
 <body>
-
   <video id="bg-video" muted>
-    <source src="Kapitel_3_animation.mp4" type="video/mp4" />
+    <source src="Kapitel_3_animation.mp4" type="video/mp4">
+    Dein Browser unterstützt das Video-Tag nicht.
   </video>
 
   <audio id="bg-sound">
-    <source src="Kapitel_3_Sound.mp3" type="audio/mpeg" />
+    <source src="Kapitel_3_Sound.mp3" type="audio/mpeg">
   </audio>
 
-  <div id="next-link-container"></div>
-  <img src="/CODE/Buttons/play_button.png" alt="Play" id="play-button" />
+  <a href="/index.html" class="image-link hidden">
+    <img src="/CODE/Buttons/zurück_start_button_2.png" alt="Kapitel Knopf zurück" class="img">
+  </a>
 
-  <script>
-    const isGitHub = location.hostname.includes("github.io");
-    const base = isGitHub ? "/DIDES_Lieblingssong_MiraCavelti/" : ".";
+  <img src="/CODE/Buttons/play_button_2.png" alt="Play" id="play-button"> 
+
+
+  <script> 
+    const playButton = document.getElementById('play-button');
   
-    const playButton = document.getElementById("play-button");
+    playButton.addEventListener('click', function startMedia() {
+      const video = document.getElementById('bg-video');
+      const audio = document.getElementById('bg-sound');
   
-    playButton.addEventListener("click", () => {
-      document.getElementById("bg-video").play();
-      document.getElementById("bg-sound").play();
-      playButton.style.display = "none";
-    });
+      video.play();
+      audio.play();
   
-    document.getElementById("bg-video").addEventListener("ended", () => {
-      document.getElementById("next-link-container").innerHTML = `
-        <a href="${base}/index.html">
-          <img src="${base}/CODE/Buttons/zurück_start_button.png" alt="Zurück" class="img" />
-        </a>
-      `;
+      // Play-Button ausblenden
+      playButton.style.display = 'none';
+  
+      // Bild-Link einblenden, wenn Video zu Ende ist
+      video.addEventListener('ended', () => {
+        const imageLink = document.querySelector('.image-link');
+        imageLink.classList.remove('hidden');
+      });
     });
   </script>
-
 </body>
 </html>

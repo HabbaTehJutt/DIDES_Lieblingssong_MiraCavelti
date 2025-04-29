@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kapitel 2</title>
-  <link rel="stylesheet" href="Kapitel_2.css" />
+  <link rel="stylesheet" href="Kapitel_2.css">
+
 </head>
 <body>
-
   <video id="bg-video" muted>
-    <source src="Kapitel_2_animation.mp4" type="video/mp4" />
+    <source src="Kapitel_2_animation.mp4" type="video/mp4">
+    Dein Browser unterstützt das Video-Tag nicht.
   </video>
 
   <audio id="bg-sound">
-    <source src="Kapitel_2_Sound.mp3" type="audio/mpeg" />
+    <source src="Kapitel_2_Sound.mp3" type="audio/mpeg">
   </audio>
 
-  <div id="next-link-container"></div>
-  <img src="play_button.png" alt="Play" id="play-button" />
+  <a href="/CODE/Kapitel_3/Kapitel_3.html" class="image-link hidden">
+    <img src="Kapitel_3_Button.png" alt="Kapitel Knopf3" class="img">
+  </a>
 
-  <script>
-    const isGitHub = location.hostname.includes("github.io");
-    const base = isGitHub ? "/DIDES_Lieblingssong_MiraCavelti/CODE" : ".";
+  <img src="/CODE/Buttons/play_button.png" alt="Play" id="play-button"> 
 
-    document.getElementById("play-button").addEventListener("click", () => {
-      document.getElementById("bg-video").play();
-      document.getElementById("bg-sound").play();
-      playButton.style.display = "none";
-    });
 
-    document.getElementById("bg-video").addEventListener("ended", () => {
-      document.getElementById("next-link-container").innerHTML = `
-        <a href="${base}/Kapitel_3/Kapitel_3.html">
-          <img src="${base}/Kapitel_2/Kapitel_3_Button.png" alt="Kapitel 3" class="img" />
-        </a>
-      `;
+  <script> 
+    const playButton = document.getElementById('play-button');
+  
+    playButton.addEventListener('click', function startMedia() {
+      const video = document.getElementById('bg-video');
+      const audio = document.getElementById('bg-sound');
+  
+      video.play();
+      audio.play();
+  
+      // Play-Button ausblenden
+      playButton.style.display = 'none';
+  
+      // Bild-Link einblenden, wenn Video zu Ende ist
+      video.addEventListener('ended', () => {
+        const imageLink = document.querySelector('.image-link');
+        imageLink.classList.remove('hidden');
+      });
     });
   </script>
-
 </body>
 </html>
