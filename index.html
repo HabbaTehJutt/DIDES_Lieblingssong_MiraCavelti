@@ -1,32 +1,58 @@
-'<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat's in the Cradle - Harry Chapin</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Righteous&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cat's in the Cradle - Harry Chapin</title>
 
-    <link rel="stylesheet" href="CODE/Kapitel_0/Kapitel_0.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Righteous&display=swap" rel="stylesheet"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="CODE/Kapitel_0/Kapitel_0.css" />
 </head>
-
 <body>
-    <video autoplay muted loop>
-        <source src="CODE/Kapitel_0/Titelszene_2.2.mp4" type="video/mp4">
-        Dein Browser unterstützt das Video-Tag nicht.
-      </video>
-    
-      <div class="text-overlay floating">
-        CAT'S IN THE CRADLE
-      </div>
-      <div class="text-Artist floating">
-        HARRY CHAPIN
-      </div>
 
-        <a href="CODE/Kapitel_1/Kapitel_1.html" class="image-link">
-          <img src="CODE/Kapitel_0/Kapitel Knopf.png" alt="Kapitel Knopf" class="img">
+  <!-- Hintergrundvideo -->
+  <video autoplay muted loop>
+    <source src="CODE/Kapitel_0/Titelszene_2.2.mp4" type="video/mp4" />
+    Dein Browser unterstützt das Video-Tag nicht.
+  </video>
+
+  <!-- Titeltexte -->
+  <div class="text-overlay floating">
+    CAT'S IN THE CRADLE
+  </div>
+  <div class="text-Artist floating">
+    HARRY CHAPIN
+  </div>
+
+  <!-- Kapitel-Buttons Container -->
+  <div id="kapitel-buttons"></div>
+
+  <script>
+    const isGitHub = window.location.hostname.includes("github.io");
+    const base = isGitHub ? "/DIDES_Lieblingssong_MiraCavelti" : "";
+
+    const kapitel = [
+      { pfad: "Kapitel_1", bild: "Kapitel Knopf.png", alt: "Kapitel 1" },
+      { pfad: "Kapitel_2", bild: "Kapitel_2_Button.png", alt: "Kapitel 2" },
+      { pfad: "Kapitel_3", bild: "Kapitel_3_Button.png", alt: "Kapitel 3" }
+    ];
+
+    const container = document.getElementById("kapitel-buttons");
+
+    kapitel.forEach((k, i) => {
+      const html = `
+        <a href="${base}/CODE/${k.pfad}/${k.pfad}.html" class="image-link">
+          <img src="${base}/CODE/Kapitel_0/${k.bild}" alt="${k.alt}" class="img" style="top: ${30 + i * 20}%;">
         </a>
+      `;
+      container.innerHTML += html;
+    });
+  </script>
 
 </body>
-</html>'
+</html>
