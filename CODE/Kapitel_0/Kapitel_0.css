@@ -88,7 +88,7 @@ img:hover {
 
     video {
       position: fixed;
-      bottom: 0;
+      bottom: 10vh;
       left: -5;
       width: 100vw;
       height: 100vh;
@@ -101,7 +101,7 @@ img:hover {
     img {
       width: 30vh;
       height: auto;
-      top: 40%;
+      top: 50%;
       left: 50%;
       transform: translateX(-50%);
     }
