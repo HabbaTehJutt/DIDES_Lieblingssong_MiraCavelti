@@ -91,7 +91,7 @@ img:hover {
     video {
       position: fixed;
       margin-top: 10vh;
-      bottom: 0;
+      bottom: -2;
       left:0;
       top: initial;
       width: 100vw;
