@@ -12,25 +12,25 @@ video {
         display: none;
       }
       
-      img {
+      img { /* zurück zu start button */
         width: 80vw;
         height: 75vh;
         position: absolute;
         top: 12vh;
         left: 12vw;
         z-index: 2;
-        cursor: pointer; /* Zeigt Mauszeiger als Hand */
+        cursor: pointer; 
       }
       
       img:hover {
-        transform: scale(1.2); /* Leichtes Vergrößern */
+        transform: scale(1.2); 
       }
 
       #play-button {
         position: absolute;
         top: 20%;
         left: 25%;
-        width: 52vw; /* Größe anpassen */
+        width: 52vw; 
         height: 56vh;
         z-index: 3;
         cursor: pointer;
@@ -38,10 +38,10 @@ video {
 
 @media (max-width: 768px) {
   video {
-    object-fit: contain; /* Verhindert das Abschneiden des Videos */
+    object-fit: contain; 
   }
 
-  img {
+  img { /* zurück zu start button*/
     width: 102vw;
     height: auto;
     top: 28vh;

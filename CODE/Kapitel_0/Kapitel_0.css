@@ -6,7 +6,7 @@ body, html {
   overflow: hidden;
 }
 
-video {
+video { /*hintergrundvideo*/
 position: fixed;
 top: 0;
 left: 0;
@@ -16,22 +16,22 @@ object-fit: cover;
 z-index: -1;
 }
 
-img {
+img { /*kapitel 1 button*/
   width: 30vh;
   height: auto;
   position: absolute;
   bottom: 30%;
   left: 8%;
   z-index: 2;
-  cursor: pointer; /* Zeigt Mauszeiger als Hand */
+  cursor: pointer; 
 }
 
 img:hover {
-  transform: scale(1.2); /* Leichtes Vergrößern */
-  opacity: 0.9; /* Etwas transparenter für Effekt */
+  transform: scale(1.2); 
+  opacity: 0.9; 
 }
 
-.text-overlay {
+.text-overlay { /* text cats in the cradle*/
     position: relative;
     top: 3%;
     left: 3%;
@@ -42,7 +42,7 @@ img:hover {
     animation: float-up 3s ease-in-out infinite;
   }
   
-  .text-Artist {
+  .text-Artist { /*harry chapin*/
     position: relative;
     top: 5%;
     left: 3%;
@@ -70,8 +70,7 @@ img:hover {
   }
 
 
-  @media only screen and (max-width: 768px) {
-    /* Titeltext kleiner & zentriert */
+  @media only screen and (max-width: 768px) { /*breakpoint*/
     .text-overlay {
       font-size: 8vh;
       text-align: center;

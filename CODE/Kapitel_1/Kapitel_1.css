@@ -2,7 +2,7 @@ body {
   overflow: hidden;
 }
 
-video {
+video { 
     position: fixed;
     display: none;
     top: 0;
@@ -17,7 +17,7 @@ video {
         display: none;
       }
       
-    img.img {
+    img.img { /*Kapitel 2 button*/
         width: 60vw;
         height: 58vh;
         position: absolute;
@@ -29,14 +29,14 @@ video {
       
       
      img:hover {
-        transform: scale(1.2); /* Leichtes Vergrößern */
+        transform: scale(1.2); 
       }
 
-#play-button {
+#play-button { 
         position: absolute;
         top: 0;
         left: 0%;
-        width: 100vw; /* Größe anpassen */
+        width: 100vw; 
         height: 100vh;
         z-index: 3;
         cursor: pointer;
@@ -44,10 +44,10 @@ video {
 
 @media (max-width: 768px)  {
   video {
-    object-fit: contain; /* Alternativ: 'cover' kann Inhalte abschneiden */
+    object-fit: contain; 
   }
 
-  img.img {
+  img.img { /* kapitel 2 button */
     width: 80vw;
     height: auto;
     top: 30vh;
