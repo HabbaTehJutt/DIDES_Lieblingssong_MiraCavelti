@@ -1,5 +1,10 @@
+body {
+  overflow: hidden;
+}
+
 video {
     position: fixed;
+    display: none;
     top: 0;
     left: 0;
     width: 100vw;
@@ -29,10 +34,10 @@ video {
 
 #play-button {
         position: absolute;
-        top: 7%;
-        left: 10%;
-        width: 78vw; /* Größe anpassen */
-        height: 85vh;
+        top: 0;
+        left: 0%;
+        width: 100vw; /* Größe anpassen */
+        height: 100vh;
         z-index: 3;
         cursor: pointer;
 }
@@ -50,9 +55,9 @@ video {
   }
 
   #play-button {
-    width: 80vw;
-    height: 50;
-    top: 28%;
-    left: 5%;
+    width: 100vw;
+    height: auto;
+    top: 35%;
+    left: 0;
   }
 }

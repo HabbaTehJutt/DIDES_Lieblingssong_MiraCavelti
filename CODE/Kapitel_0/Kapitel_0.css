@@ -18,7 +18,7 @@ z-index: -1;
 
 img {
   width: 30vh;
-  height: 10vw;
+  height: auto;
   position: absolute;
   bottom: 30%;
   left: 8%;
@@ -90,10 +90,12 @@ img:hover {
 
     video {
       position: fixed;
-      margin-top: 150px;
-      width: 600vw;
+      bottom: 0;
+      left:0;
+      top: initial;
+      width: 100vw;
       height: 60vh;
-      object-fit: scale-down;
+      object-fit: cover;
       z-index: -1;
       }
   
