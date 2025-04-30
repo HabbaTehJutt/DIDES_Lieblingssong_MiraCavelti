@@ -90,7 +90,7 @@ img:hover {
 
     video {
       position: fixed;
-      margin-top: 60vh;
+      margin-top: 20vh;
       width: 100vw;
       height: 100vh;
       object-fit: contain; 
