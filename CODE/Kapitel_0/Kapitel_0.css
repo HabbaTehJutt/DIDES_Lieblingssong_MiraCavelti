@@ -95,7 +95,7 @@ img:hover {
       width: 100vw;
       height: 100vh;
       object-fit: contain; 
-      object-position: bottom;
+      object-position: center;
       z-index: -1;
       }
   
@@ -103,7 +103,7 @@ img:hover {
     img {
       width: 30vh;
       height: auto;
-      bottom: 0%;
+      bottom: 10%;
       left: 50%;
       transform: translateX(-50%);
       z-index: 3;
