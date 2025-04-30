@@ -37,7 +37,7 @@ video {
         cursor: pointer;
 }
 
-@media (max-width: 1080px) and (max-height: 2412px) {
+@media (max-width: 768px)  {
   video {
     object-fit: contain; /* Alternativ: 'cover' kann Inhalte abschneiden */
   }
