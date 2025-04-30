@@ -105,6 +105,7 @@ img:hover {
       width: 30vh;
       height: auto;
       top: 40%;
+      bottom: initial;
       left: 50%;
       transform: translateX(-50%);
       z-index: 3;
