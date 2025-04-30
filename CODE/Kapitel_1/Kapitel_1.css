@@ -50,7 +50,7 @@ video {
   }
 
   #play-button {
-    width: 90vw;
+    width: auto;
     height: 45vh;
     top: 28%;
     left: 5%;
