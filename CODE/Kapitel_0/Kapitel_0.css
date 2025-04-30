@@ -90,8 +90,6 @@ img:hover {
 
     video {
       position: fixed;
-      bottom: 40vh;
-      left: -5;
       width: 100vw;
       height: 100vh;
       object-fit: contain; 
@@ -103,7 +101,7 @@ img:hover {
     img {
       width: 30vh;
       height: auto;
-      top: 35%;
+      top: 40%;
       left: 50%;
       transform: translateX(-50%);
       z-index: 3;
