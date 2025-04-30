@@ -94,7 +94,7 @@ img:hover {
       top: initial;
       width: 100vw;
       height: auto;
-      object-fit: cover;
+      object-fit: contain;
       z-index: -1;
       }
   
