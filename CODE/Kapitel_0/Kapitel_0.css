@@ -19,7 +19,7 @@ z-index: -1;
 img { /*kapitel 1 button*/
   width: 30vh;
   height: auto;
-  position: absolute;
+  position: relative;
   bottom: 50%;
   left: 3%;
   z-index: 2;
@@ -101,6 +101,7 @@ img:hover {
     /* Button */
     img {
       width: 30vh;
+      position: relative;
       height: auto;
       bottom: 50%;
       left: 50%;
