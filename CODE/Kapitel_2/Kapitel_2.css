@@ -14,9 +14,9 @@ video {
       
       img { /* kapitel 3 button */
         width: 60vw;
-        height: 65vh;
+        height: auto;
         position: absolute;
-        top: 22vh;
+        top: 41vh;
         left: 20vw;
         z-index: 2;
         cursor: pointer; 

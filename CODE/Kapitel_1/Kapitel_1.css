@@ -19,9 +19,9 @@ video {
       
     img.img { /*Kapitel 2 button*/
         width: 60vw;
-        height: 58vh;
+        height: auto;
         position: absolute;
-        top: 22vh;
+        top: 41vh;
         left: 20vw;
         z-index: 2;
         cursor: pointer;
