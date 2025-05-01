@@ -20,8 +20,8 @@ img { /*kapitel 1 button*/
   width: 30vh;
   height: auto;
   position: absolute;
-  bottom: 30%;
-  left: 8%;
+  bottom: 50%;
+  left: 3%;
   z-index: 2;
   cursor: pointer; 
 }
@@ -33,22 +33,22 @@ img:hover {
 
 .text-overlay { /* text cats in the cradle*/
     position: relative;
-    top: 3%;
+    top: 5%;
     left: 3%;
     color: rgb(70, 143, 65);
     font-family: "Bona Nova SC", serif;
-    font-size: 15vh;
+    font-size: 6vh;
     text-align: left;
     animation: float-up 3s ease-in-out infinite;
   }
   
   .text-Artist { /*harry chapin*/
     position: relative;
-    top: 5%;
+    top: 8%;
     left: 3%;
     color: rgb(243, 195, 21);
     font-family: "Bona Nova SC", cursive;
-    font-size: 10vh;
+    font-size: 4vh;
     text-align: left;
     animation: float-up 2s ease-in-out infinite; /* Andere Dauer und Richtung */
   }
