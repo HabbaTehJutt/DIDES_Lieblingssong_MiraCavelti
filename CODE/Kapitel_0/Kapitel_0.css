@@ -103,7 +103,7 @@ img:hover {
       width: 30vh;
       position: relative;
       height: auto;
-      bottom: 30%;
+      bottom: 5%;
       left: 50%;
       transform: translateX(-50%);
       z-index: 3;
