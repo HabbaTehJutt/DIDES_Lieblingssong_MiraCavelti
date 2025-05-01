@@ -17,7 +17,7 @@ video {
         height: auto;
         position: absolute;
         top: 41vh;
-        left: 12vw;
+        left: 20vw;
         z-index: 2;
         cursor: pointer; 
       }
@@ -42,10 +42,10 @@ video {
   }
 
   img { /* zurück zu start button*/
-    width: 102vw;
+    width: 40vw;
     height: auto;
-    top: 28vh;
-    left: 0vw;
+    top: 50vh;
+    left: 30vw;
   }
 
   #play-button {

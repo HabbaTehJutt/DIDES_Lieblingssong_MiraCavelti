@@ -15,7 +15,7 @@ video {
       img { /* kapitel 3 button */
         width: 60vw;
         height: auto;
-        position: absolute;
+        position: relative;
         top: 41vh;
         left: 20vw;
         z-index: 2;
@@ -43,10 +43,10 @@ video {
   }
 
   img { /* kapitel 3 button */
-    width: 102vw;
+    width: 40vw;
     height: auto;
-    top: 28.5vh;
-    left: 0px
+    top: 50vh;
+    left: 30vw;
   }
 
   #play-button {

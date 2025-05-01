@@ -17,12 +17,12 @@ video {
         display: none;
       }
       
-    img.img { /*Kapitel 2 button*/
-        width: 60vw;
+  img { /*Kapitel 2 button*/
+        width: 50vw;
         height: auto;
-        position: absolute;
-        top: 41vh;
-        left: 20vw;
+        position: relative;
+        top: 44vh;
+        left: 25vw;
         z-index: 2;
         cursor: pointer;
       }
@@ -47,11 +47,12 @@ video {
     object-fit: contain; 
   }
 
-  img.img { /* kapitel 2 button */
-    width: 80vw;
+  img { /* kapitel 2 button */
+    width: 40vw;
     height: auto;
-    top: 30vh;
-    left: 10vw;
+    position: relative;
+    top: 50vh;
+    left: 30vw;
   }
 
   #play-button {
