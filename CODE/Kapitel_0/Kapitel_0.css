@@ -36,7 +36,7 @@ img:hover {
     top: 3%;
     left: 3%;
     color: rgb(70, 143, 65);
-    font-family: "Just Me Again Down Here", cursive;
+    font-family: "Bona Nova SC", serif;
     font-size: 15vh;
     text-align: left;
     animation: float-up 3s ease-in-out infinite;
@@ -47,7 +47,7 @@ img:hover {
     top: 5%;
     left: 3%;
     color: rgb(243, 195, 21);
-    font-family: "Just Me Again Down Here", cursive;
+    font-family: "Bona Nova SC", cursive;
     font-size: 10vh;
     text-align: left;
     animation: float-up 2s ease-in-out infinite; /* Andere Dauer und Richtung */
